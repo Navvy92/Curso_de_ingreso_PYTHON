@@ -40,7 +40,21 @@ class App(customtkinter.CTk):
 
 
     def btn_mostrar_on_click(self):
-        pass
+        #nombre= self.txt_nombre.get()
+        #edad= self.txt_edad.get()
+        
+        #nombre_completo = nombre + " " + edad
+        #alert("Titulo", nombre_completo)
+        
+        nombre = self.txt_nombre.get()
+        edad = self.txt_edad.get()
+        
+        alert("Titulo",nombre + " " + edad)
+        
+        self.txt_nombre.delete (0, "end")
+        self.txt_edad.delete (0, "end")
+        
+        
 
         
     
