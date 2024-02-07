@@ -33,7 +33,15 @@ class App(customtkinter.CTk):
 
 
     def btn_mostrar_on_click(self):
-        pass
+        valor = self.txt_sueldo.get()
+        
+        valor_int = int(valor)
+        
+        porcentaje = valor_int * 15 / 100
+        
+        sueldo = valor_int + porcentaje
+        
+        alert("Titulo", sueldo)
         
     
 if __name__ == "__main__":

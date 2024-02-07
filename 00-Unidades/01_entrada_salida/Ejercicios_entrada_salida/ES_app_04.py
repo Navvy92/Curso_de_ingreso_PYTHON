@@ -37,7 +37,7 @@ class App(customtkinter.CTk):
         #self.txt_nombre.delete (0,30)
         #self.txt_nombre.delete (0, len(self.txt_nombre.get())-1)
         #self.txt_nombre.delete (0,tkinter.END)
-        self.txt_nombre.insert (0, "end")
+        self.txt_nombre.delete (0, "end")
     
 if __name__ == "__main__":
     app = App()
