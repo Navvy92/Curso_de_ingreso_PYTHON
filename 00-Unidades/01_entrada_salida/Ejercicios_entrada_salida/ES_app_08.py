@@ -48,7 +48,9 @@ class App(customtkinter.CTk):
         
         resultado = numero_a_int % numero_b_int
         
-        alert("Resultado", resultado)
+        mensaje = "El resto de dividir " + numero_a + " y " + numero_b + " es: " + str(resultado)
+        
+        alert("Resultado", mensaje)
         
         
     

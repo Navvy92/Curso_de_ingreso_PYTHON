@@ -34,7 +34,15 @@ class App(customtkinter.CTk):
         self.btn_mostrar.grid(row=2, pady=20, padx=30, columnspan=2, sticky="nsew")
 
     def btn_mostrar_on_click(self):
-        pass
+        importe = self.txt_importe.get()
+        
+        importe_int = int(importe)
+        
+        importe_ptj = importe_int * 20 / 100
+        
+        importe_act = importe_int + importe_ptj
+        
+        alert("Titulo", importe_act)
 
 
 if __name__ == "__main__":

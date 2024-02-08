@@ -42,9 +42,13 @@ class App(customtkinter.CTk):
         numero_a = self.txt_operador_a.get()
         numero_b = self.txt_operador_b.get()
         
-        total = int(numero_a) + int(numero_b)
+        numero_a_int = int(numero_a)
+        numero_b_int = int(numero_b)
         
-        alert ("Resultado", "El resultado entre " + numero_a + " y " + numero_b + " es " + str(total))
+        
+        total = numero_a_int + numero_b_int
+        mensaje = "El resultado de la suma es " + str(total)
+        alert ("Resultado", mensaje)
      
         
 if __name__ == "__main__":
